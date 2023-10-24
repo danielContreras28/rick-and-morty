@@ -22,7 +22,7 @@ const ListCharactersProvider = ({
     end: { width: window.innerWidth > 480 ? "50%" : "100%", padding: "10px" },
   });
   const { play: playList, style: styleList } = useAnimate({
-    start: { gridTemplateColumns: window.innerWidth > 768 ? "repeat(5, 1fr)" : window.innerWidth > 480 ? "repeat(4, 1fr)" : "repeat(2, 1fr)" },
+    start: { gridTemplateColumns: window.innerWidth > 768 ? "repeat(5, 1fr)" : window.innerWidth > 480 ? "repeat(4, 1fr)" : "repeat(1, 1fr)" },
     end: { gridTemplateColumns: window.innerWidth > 768 ? "repeat(3, 1fr)" : window.innerWidth > 480 ? "repeat(2, 1fr)" : "repeat(1, 1fr)", width: window.innerWidth > 480 ? "50%" : "0px" },
   });
   // define your provider logic here
