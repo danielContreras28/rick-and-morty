@@ -19,6 +19,9 @@ export const ContainerInformationDetails = styled.div`
   @media (max-width: 768px) {
     height: 80%;
   }
+  @media (max-height: 500px) {
+    height: 67%;
+  }
 `;
 
 // create component of title aplication section characters
@@ -96,6 +99,9 @@ export const DropdownDetailsCharacter = styled.div`
   color: ${config.color.text};
   overflow: hidden;
   padding: 10px;
+  @media (max-height: 600px) {
+      overflow: auto;
+  }
 `;
 
 // create component of details characters

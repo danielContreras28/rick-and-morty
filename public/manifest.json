@@ -27,6 +27,7 @@
   "dir": "ltr",
   "display_override": ["standalone", "fullscreen"],
   "display": "standalone",
+  "orientation": "portrait",
   "lang": "es-ES",
   "theme_color": "#222831",
   "scope": "/",

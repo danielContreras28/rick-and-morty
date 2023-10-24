@@ -9,6 +9,7 @@ import { List } from '../utils/recurent.stylet';
 
 const ListCharacters = () => {
     const serviceCharacters = new ServiceCharacters();
+    const refList = React.useRef<any>();
     const { ElementList, setElementList, setInfoApi, Page, styleList } = React.useContext(ListCharactersContext) as ListCharactersContextInterface;
 
     const getToListCharacters = (page: number) => {
@@ -20,10 +21,13 @@ const ListCharacters = () => {
 
     useEffect(() => {
         getToListCharacters(Page);
-    }, [ Page ]);
+        if(refList.current) {
+            refList.current.scrollTop = 0;
+        }
+    }, [ Page, refList ]);
 
     return (
-        <List style={styleList} >
+        <List style={styleList} ref={refList} >
             {ElementList.map((character: any) => (
                 <Item key={character.id} character={character} />
             ))}

@@ -31,7 +31,7 @@ const DetailCharacter: React.FC = () => {
         src={CharactersSelected?.image}
         alt={CharactersSelected?.name}
         effect="blur"
-        width={window.innerWidth > 480 ? "150px" : "100px"}
+        width={window.innerHeight > 500 ? window.innerWidth > 480 ? "150px" : "100px" : "100px"}
         placeholderSrc={CharactersSelected?.image}
       />
       <ContainerColumnDropdownDetailsCharacters>
