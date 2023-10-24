@@ -29,6 +29,9 @@ export const Title = styled.h1`
   text-align: center;
   margin-top: 0px;
   margin-bottom: 20px;
+  @media (max-width: 768px) {
+      margin-bottom: 10px;
+  }
 `;
 
 // create component of item characters for list characters
@@ -117,6 +120,9 @@ export const DetailCharacterDropdown = styled(DetailsCharacter)`
       margin-left: 5px;
       color: ${config.color.text};
   }
+  @media (max-width: 768px) {
+      margin-bottom: 2px;
+  }
 `;
 // create component of details characters species
 export const DetailsCharacterSpecies = styled.small`
@@ -131,6 +137,9 @@ export const DetailsCharacterSpecies = styled.small`
   min-width: 50px;
   height: 24px;
   margin-left: 5px;
+  @media (max-width: 768px) {
+      height: 18px;
+  }
 `;
 // create component container button pages
 export const ContainerButtonPages = styled.div`
@@ -175,6 +184,9 @@ export const ContainerButtonCloseDropdown = styled.div`
   justify-content: flex-end;
   position: relative;
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+      margin-bottom: 10px;
+  }
 `;
 
 // create component Container button download extending ContainerButtonCloseDropdown
@@ -182,13 +194,18 @@ export const ContainerButtonDownload = styled(ContainerButtonCloseDropdown)`
   margin-bottom: 0px;
   
   @media (max-width: 768px) {
-      margin-bottom: 50px !important;
+      margin-bottom: 40px !important;
   }
 `;
 
 // create component button close dropdown extending ButtonPages
 export const ButtonCloseDropdown = styled(ButtonPages)`
   position: absolute;
+  @media (max-width: 768px) {
+      width: 25px;
+      height: 25px;
+      font-size: ${config.Fonts.Small};
+  }
 `;
 
 // create component button download extending ButtonPages
@@ -224,6 +241,9 @@ export const ListEpisodes = styled.ul`
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: ${config.color.secondary};
+  }
+  @media (max-width: 480px) {
+      height: 50px;
   }
 `;
 
