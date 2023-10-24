@@ -19,11 +19,11 @@ const ListCharactersProvider = ({
 }) => {
   const { play: playDropdown, style: styleDropdown } = useAnimate({
     start: { width: 0, padding: 0 },
-    end: { width: "50%", padding: "10px" },
+    end: { width: window.innerWidth > 480 ? "50%" : "100%", padding: "10px" },
   });
   const { play: playList, style: styleList } = useAnimate({
-    start: { gridTemplateColumns: "repeat(5, 1fr)" },
-    end: { gridTemplateColumns: "repeat(3, 1fr)" },
+    start: { gridTemplateColumns: window.innerWidth > 768 ? "repeat(5, 1fr)" : window.innerWidth > 480 ? "repeat(4, 1fr)" : "repeat(2, 1fr)" },
+    end: { gridTemplateColumns: window.innerWidth > 768 ? "repeat(3, 1fr)" : window.innerWidth > 480 ? "repeat(2, 1fr)" : "repeat(1, 1fr)", width: window.innerWidth > 480 ? "50%" : "0px" },
   });
   // define your provider logic here
   const [ElementList, setElementList] = useState<Array<CharacterInterface>>([]);

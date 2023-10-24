@@ -92,7 +92,7 @@ export const DropdownDetailsCharacter = styled.div`
 `;
 
 // create component of details characters
-export const DetailsCharacter = styled.p`
+export const DetailsCharacter = styled.div`
   width: 50%;
   font-size: ${config.Fonts.Small};
   margin-top: 0px;
@@ -176,6 +176,10 @@ export const ContainerButtonCloseDropdown = styled.div`
 // create component Container button download extending ContainerButtonCloseDropdown
 export const ContainerButtonDownload = styled(ContainerButtonCloseDropdown)`
   margin-bottom: 0px;
+  
+  @media (max-width: 768px) {
+      margin-bottom: 50px !important;
+  }
 `;
 
 // create component button close dropdown extending ButtonPages
