@@ -30,8 +30,6 @@ export const CharSpecies = () => {
 
   // funtion definition for char species
   const optionsCharSpecies = () => {
-    console.log(speciesList());
-
     const charSpecies = {
       chart: {
         type: "column",

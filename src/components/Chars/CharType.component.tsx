@@ -30,8 +30,6 @@ export const CharType = () => {
 
   // funtion definition for char type
   const optionsCharType = () => {
-    console.log(typeList());
-
     const charType = {
       chart: {
         plotBackgroundColor: null,

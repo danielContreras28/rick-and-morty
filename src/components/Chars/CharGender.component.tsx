@@ -30,8 +30,6 @@ export const CharGender = () => {
 
   // funtion definition for char gender
   const optionsCharGender = () => {
-    console.log(genderList());
-
     const charGender = {
       chart: {
         plotBackgroundColor: null,

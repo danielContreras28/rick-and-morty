@@ -30,8 +30,6 @@ export const CharStatus = () => {
 
   // funtion definition for char status
   const optionsCharStatus = () => {
-    console.log(statusList());
-
     const charStatus = {
       chart: {
         plotBackgroundColor: null,
