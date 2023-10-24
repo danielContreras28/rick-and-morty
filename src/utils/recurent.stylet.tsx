@@ -15,6 +15,10 @@ export const ContainerInformationDetails = styled.div`
   display: flex;
   flex-direction: row;
   height: 85%;
+  
+  @media (max-width: 768px) {
+    height: 80%;
+  }
 `;
 
 // create component of title aplication section characters
