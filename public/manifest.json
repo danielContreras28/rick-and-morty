@@ -1,6 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Rick and Morty",
+  "name": "Rick and Morty App",
+  "description": "Rick and Morty PWA App",
+  "categories": [
+    "Entertainment",
+    "Comedy"
+  ],
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +24,11 @@
     }
   ],
   "start_url": ".",
+  "dir": "ltr",
+  "display_override": ["standalone", "fullscreen"],
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "lang": "es-ES",
+  "theme_color": "#222831",
+  "scope": "/",
+  "background_color": "#EEEEEE"
 }
